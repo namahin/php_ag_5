@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: HTML Basics Form</title>
+
+    <!-- CSS start from here -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-sec {
+            height: 100vh;
+            position: relative;
+            background-color: #101010;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 560px;
+        }
+
+        .form-sec form {
+            background-color: white;
+            padding: 60px;
+        }
+
+        .form-sec form h1 {
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        .field label {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 500;
+            color: #101010;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .field input {
+            width: calc(100% - 42px);
+            font-size: 18px;
+            line-height: 22px;
+            padding: 15px 20px;
+            border-radius: 0;
+            border: 1px solid #DDDDDD;
+        }
+
+        .field input:focus {
+            border-color: black;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 15px 20px;
+            text-align: center;
+            color: white;
+            background-color: #101010;
+            cursor: pointer;
+            transition: linear .3s;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+    </style>
+    <!-- CSS end here -->
+
+</head>
+
+<body>
+
+    <section class="form-sec">
+        <div class="container">
+            <form action="">
+                <h1>HTML Form Design</h1>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email address" required>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
